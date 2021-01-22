@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".LihatActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/second_color"
+        android:text="Detail Order"
+        android:layout_centerHorizontal="true"/>
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/title"
+        android:stretchColumns="1">
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Nomor"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text=":"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/lihat_nomor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="left"
+                android:text="Tampil ID">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Nama Pelanggan"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text=":"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/lihat_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="left"
+                android:text="Tampil Nama Pelanggan">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Alamat Pelanggan"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text=":"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/lihat_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="left"
+                android:text="Tampil Alamat Pelanggan">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Berat"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text=":"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/lihat_berat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="left"
+                android:text="Tampil berat pakaian">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paket"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text=":"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/lihat_paket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="left"
+                android:text="tampilpaket">
+            </TextView>
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/table1">
+        <Button
+            android:id="@+id/btn_antar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Antar"/>
+        <Button
+            android:id="@+id/btn_lihat_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_antar"
+            android:text="Kembali"/>
+    </RelativeLayout>
+</RelativeLayout>

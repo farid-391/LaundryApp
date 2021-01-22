@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Dicuci.in</string>
+    <string name="logout">Logout</string>
+    <string name="cuci">Cuci</string>
+    <string name="setrika">Setrika</string>
+
+    <string-array name="android_dropdown_arrays">
+        <item>Pilih Paket</item>
+        <item>Cuci</item>
+        <item>Setrika</item>
+    </string-array>
+</resources>
